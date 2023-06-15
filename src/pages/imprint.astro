@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Heading from "../components/Headings/Heading.vue";
+import Paragraph from "../components/Paragraph.vue";
+import Section from "../components/Section.vue";
+import Wrapper from "../components/Wrapper.vue";
+---
+
+<Layout title="Impressum" description="" author="" keywords="" pageUrl="">
+  <Wrapper>
+    <a class="flex justify-center my-10 font-bold" href="/">Zurück</a>
+    <Heading level={1} size={1} text="Impressum" />
+    <Section id="imprint">
+      <div class="flex flex-col items-center">
+        <Heading level={2} size={2} text="Angaben gemäß § 5 TMG" />
+        <Paragraph>
+          Pascal Kraupner<br />
+          c/o Grosch Postflex #2473<br />
+          Emsdettener Str. 10<br />
+          48268 Greven<br />
+          Keine Pakete oder Päckchen - Annahme wird verweigert!<br />
+        </Paragraph>
+        <Heading level={3} size={3} text="Kontakt" />
+        <Paragraph>E-Mail: mail@pascalkraupner.de</Paragraph>
+
+        <Heading level={3} size={3} text="Redaktionell verantwortlich" />
+        <Paragraph>Pascal Kraupner</Paragraph>
+
+        <Paragraph class="mt-20">
+          Quelle:
+          <a
+            href="https://www.e-recht24.de/impressum-generator.html"
+            target="_blank">https://www.e-recht24.de/impressum-generator.html</a
+          >
+        </Paragraph>
+      </div>
+    </Section>
+  </Wrapper>
+</Layout>

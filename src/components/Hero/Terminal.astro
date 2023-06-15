@@ -1,0 +1,34 @@
+<div
+  class="bg-black/75 min-h-[12rem] w-5/6 max-w-md aspect-[16/9] mx-auto rounded-md p-3 font-mono text-terminal text-xs"
+>
+  <div id="ssh-login" class="whitespace-pre leading-6"></div>
+</div>
+<script>
+  import Typed from "typed.js";
+  const currentDate = new Date();
+  const formattedDate = `${
+    currentDate.getMonth() + 1
+  }/${currentDate.getDate()}/${currentDate.getFullYear()}`;
+
+  new Typed("#ssh-login", {
+    strings: [
+      `
+Welcome to Ubuntu 22.04 LTS!^500
+login: pascal^500
+password:^1000
+Last login: ${formattedDate}^500
+pascal@srv1:~$ cat whoami.txt
+    `,
+      `
+------------------------------
+Name: Pascal Kraupner
+- Full-Stack Web Developer
+- &Uuml;ber 6 Jahre Erfahrung in
+  Frontend- und Backend-Entwicklung
+`,
+    ],
+    typeSpeed: 20,
+    showCursor: false,
+    fadeOut: true,
+  });
+</script>

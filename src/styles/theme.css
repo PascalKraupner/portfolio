@@ -1,0 +1,44 @@
+:root {
+  /* Background Colors */
+  --color-background-primary: #141414;
+  --color-background-secondary: #0a0a0a;
+
+  /* Text Colors */
+  --color-text-primary: theme("colors.neutral.50");
+  --color-text-secondary: theme("colors.neutral.200");
+
+  /* Primary Colors */
+  --color-primary: #70e000;
+  --color-primary-lighter: #7af500;
+  --color-primary-lightest: #85ff0a;
+  --color-primary-darker: #66cc00;
+  --color-primary-darkest: #5cb800;
+
+  /* System Colors */
+  --color-secondary: theme("colors.neutral.400");
+  --color-secondary-lighter: theme("colors.gray.500");
+  --color-secondary-darker: theme("colors.gray.500");
+
+  --color-success: theme("colors.green.600");
+  --color-success-lighter: theme("colors.gray.500");
+  --color-success-darker: theme("colors.gray.500");
+
+  --color-danger: theme("colors.red.600");
+  --color-danger-lighter: theme("colors.gray.500");
+  --color-danger-darker: theme("colors.gray.500");
+
+  --color-warning: theme("colors.orange.600");
+  --color-warning-lighter: theme("colors.gray.500");
+  --color-warning-darker: theme("colors.gray.500");
+
+  --color-info: theme("colors.sky.600");
+  --color-info-lighter: theme("colors.gray.500");
+  --color-info-darker: theme("colors.gray.500");
+
+  /* Border/Shadow/Glow Colors */
+  --color-border: theme("colors.neutral.100"/0.1);
+
+  --color-shadow: rgba(23, 23, 23, 0.9);
+
+  --color-glow: #7af500;
+}

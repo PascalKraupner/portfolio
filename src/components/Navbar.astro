@@ -1,0 +1,88 @@
+---
+import { Img } from "astro-imagetools/components";
+---
+
+<nav class="bg-secondary">
+  <div
+    class="flex justify-between items-center px-3 py-1 border-default border-p h-14 max-w-screen-2xl m-auto"
+  >
+    <a href="/">
+      <Img
+        attributes={{ img: { class: "w-12 h-auto" } }}
+        src="img/logo.png"
+        alt="Pascal Kraupner Logo"
+      />
+    </a>
+    <a href="#" data-mobile-menu-button class="md:hidden">
+      <span
+        class="bg-light-color h-1 w-6 block rounded-md mb-1 transition-transform"
+      ></span>
+      <span class="bg-light-color h-1 w-6 block rounded-md mb-1"></span>
+      <span
+        class="bg-light-color h-1 w-6 block rounded-md mt-1 transition-transform"
+      ></span>
+    </a>
+    <ul class="hidden items-center space-x-4 md:flex font-bold">
+      <li>
+        <a
+          href="/"
+          class="text-default hover:text-primary-color transition-colors duration-500"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="/#projects"
+          class="text-default hover:text-primary-color transition-colors duration-500"
+          >Projekte</a
+        >
+      </li>
+      <li>
+        <a
+          href="/about-me"
+          class="text-default hover:text-primary-color transition-colors duration-500"
+          >Über mich</a
+        >
+      </li>
+    </ul>
+    <div class="w-12 hidden md:block">&nbsp;</div>
+  </div>
+</nav>
+<div
+  class="z-20 fixed w-full h-full overflow-hidden opacity-0 invisible transition-all duration-500 bg-secondary"
+  data-mobile-menu
+>
+  <nav
+    class="text-4xl flex flex-col items-center gap-5 mt-5"
+    aria-label="mobile-menu"
+  >
+    <a href="/">Home</a>
+    <a href="/#projects">Projekte</a>
+    <a href="/about-me">Über Mich</a>
+  </nav>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const mobileMenu = document.querySelector("[data-mobile-menu]");
+    const mobileMenuButton = document.querySelector(
+      "[data-mobile-menu-button]"
+    );
+    const toggleMenu = () => {
+      mobileMenu?.classList.toggle("opacity-0");
+      const spanElements = mobileMenuButton?.querySelectorAll("span");
+      document.body.classList.toggle("overflow-hidden");
+      spanElements![1].classList.toggle("hidden");
+      spanElements![0].classList.toggle("rotate-45");
+      spanElements![2].classList.toggle("-rotate-45");
+      spanElements![0].classList.toggle("translate-y-1");
+      spanElements![2].classList.toggle("-translate-y-1");
+      mobileMenu?.classList.toggle("invisible");
+    };
+    mobileMenuButton?.addEventListener("click", () => {
+      toggleMenu();
+    });
+    mobileMenu?.addEventListener("click", () => {
+      toggleMenu();
+    });
+  });
+</script>

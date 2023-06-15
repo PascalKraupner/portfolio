@@ -1,0 +1,59 @@
+---
+import "@fontsource/mulish";
+import "../styles/index.css";
+import "@fortawesome/fontawesome-free/css/all.css";
+import { ImageSupportDetection } from "astro-imagetools/components";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  author?: string;
+  pageUrl?: string;
+}
+const defaultDescription =
+  "Pascal Kraupner - Full Stack Web Developer | Portfolio";
+const defaultKeywords =
+  "Pascal Kraupner, software engineer, web development, full stack developer, portfolio";
+const defaultAuthor = "Pascal Kraupner";
+const defaultPageUrl = "https://www.pascalkraupner.dev";
+const defaultTitle = "Pascal Kraupner - Full Stack Web Developer | Portfolio";
+
+const {
+  title = defaultTitle,
+  description = defaultDescription,
+  keywords = defaultKeywords,
+  author = defaultAuthor,
+  pageUrl = defaultPageUrl,
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content={author} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={pageUrl} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <title>{title}</title>
+    <ImageSupportDetection />
+  </head>
+  <body
+    class="bg-primary text-primary text-base font-['Mulish'] flex flex-col min-h-screen"
+  >
+    <Navbar />
+    <main class="">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Heading from "../components/Headings/Heading.vue";
+import Paragraph from "../components/Paragraph.vue";
+import Section from "../components/Section.vue";
+import TechStackSection from "../components/TechStack/TechStackSection.vue";
+import ExperienceSection from "../components/Experience/ExperienceSection.vue";
+import Wrapper from "../components/Wrapper.vue";
+---
+
+<Layout
+  title="Pascal Kraupner - Full Stack Web Developer | About me"
+  pageUrl="https://www.pascalkraupner.dev/about-me"
+>
+  <Wrapper>
+    <Heading level={1} size={1} cursor={true} text="Über mich" />
+    <Section id="about-me">
+      <Paragraph
+        class="w-2/3 mt-20 mb-40 m-auto text-xl text-justify leading-8"
+      >
+        Hallo! 👋 Ich bin Pascal Kraupner, ein erfahrener Full-Stack Entwickler
+        mit über 6 Jahren Erfahrung.
+        <br />
+        <br />
+        Ursprünglich begann ich einfache Websites mit dem LAMP-Stack zu entwickeln,
+        um dann in die moderne Webentwicklung einzutauchen und mich auf mein bevorzugtes
+        Duo von Laravel und Vue.js zu konzentrieren. <br />
+        Mit diesen robusten Frameworks habe ich solide Webanwendungen entwickelt.
+        <br />
+        <br /> Doch meine Neugier und Offenheit für neue Technologien lassen mich
+        kontinuierlich meinen Horizont erweitern. <br /> In letzter Zeit habe ich
+        verstärkt meine Aufmerksamkeit auf React, TypeScript und andere auf JavaScript
+        basierte Stacks gerichtet.
+        <br />
+        <br />
+        Zusätzlich interessiere ich mich zunehmend für Sprachen wie Go und Rust und
+        deren Potenzial in der Welt der Backend-Webentwicklung.
+        <br />
+        <br />
+        Ich bin davon überzeugt, dass sauberer Code, durchdachte Architektur und
+        kontinuierliche Integration die Grundpfeiler sind, um maßgeschneiderte Software
+        von höchster Qualität zu liefern.
+        <br /><br /> Meine Leidenschaft besteht darin, stets neue Wege und Möglichkeiten
+        zu finden, um diese Standards zu verbessern und wartbare, innovative und
+        stabile Softwarelösungen zu entwickeln.
+      </Paragraph>
+    </Section>
+    <Heading level={2} size={2} text="Erfahrung" cursor={true} />
+    <ExperienceSection />
+    <Heading level={2} size={3} text="Tech Stack" cursor={true} />
+    <TechStackSection />
+  </Wrapper>
+</Layout>

@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /imprint
+Disallow: /privacy
