@@ -14,8 +14,6 @@ services:
       - "traefik.http.middlewares.portfolio-redirect.redirectregex.regex=^https://pascalkraupner.dev/(.*)"
       - "traefik.http.middlewares.portfolio-redirect.redirectregex.replacement=https://www.pascalkraupner.dev/$${1}"
       - "traefik.http.routers.portfolio.tls.certresolver=lets-encr"
-      - "traefik.http.routers.portfolio.middlewares=portfolio-auth,portfolio-redirect"
-      - "traefik.http.middlewares.portfolio-auth.basicauth.users=pascal:$$apr1$$2/xHwJU3$$iqhuvn3Se1sNoZ0beuFMi1"
 networks:
   default:
     name: proxy
