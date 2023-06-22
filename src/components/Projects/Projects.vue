@@ -22,7 +22,7 @@ const projects = [
 
 <template>
   <Section id="projects">
-    <Heading :level="2" :size="1" text="Projects" :cursor="true" />
+    <Heading :level="2" :size="1" text="Projekte" :cursor="true" />
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 my-16 place-items-center"
     >
