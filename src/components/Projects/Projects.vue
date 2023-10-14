@@ -21,7 +21,7 @@ const projects = [
 </script>
 
 <template>
-  <Section id="projects">
+  <!-- <Section id="projects">
     <Heading :level="2" :size="1" text="Projekte" :cursor="true" />
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 my-16 place-items-center"
@@ -32,11 +32,11 @@ const projects = [
         :project="project"
       />
     </div>
+  </Section> -->
     <!--
     TODO: Implement dedicated projects detail page
             <div class="flex justify-center mb-20">
                 <PrimaryButton text="Alle Projekte" href="/projects" icon="diagram-project" />
             </div>
     -->
-  </Section>
 </template>
