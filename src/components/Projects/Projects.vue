@@ -21,9 +21,12 @@ const projects = [
 </script>
 
 <template>
-  <!-- <Section id="projects">
+  <Section id="projects">
     <Heading :level="2" :size="1" text="Projekte" :cursor="true" />
-    <div
+
+    <Heading :level="4" :size="4" text="Coming Soon" :cursor="false" />
+
+    <!-- <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 my-16 place-items-center"
     >
       <ProjectCard
@@ -31,12 +34,13 @@ const projects = [
         :key="project.id"
         :project="project"
       />
-    </div>
-  </Section> -->
+    </div> -->
+
     <!--
     TODO: Implement dedicated projects detail page
             <div class="flex justify-center mb-20">
                 <PrimaryButton text="Alle Projekte" href="/projects" icon="diagram-project" />
             </div>
     -->
+  </Section>
 </template>
