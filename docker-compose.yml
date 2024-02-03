@@ -10,11 +10,14 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.portfolio.entrypoints=websecure"
-      - "traefik.http.routers.portfolio.rule=Host(`pascalkraupner.dev`) || Host(`www.pascalkraupner.dev`) || Host(`portfolio.pascalkraupner.de`)"
+      - "traefik.http.routers.portfolio.rule=Host(`pascalkraupner.dev`) || Host(`www.pascalkraupner.dev`) || Host(`pascalkraupner.de`)"
       - "traefik.http.middlewares.portfolio-redirect.redirectregex.regex=^https://pascalkraupner.dev/(.*)"
       - "traefik.http.middlewares.portfolio-redirect.redirectregex.replacement=https://www.pascalkraupner.dev/$${1}"
+      - "traefik.http.middlewares.domain-redirect.redirectregex.regex=^https://pascalkraupner.de/(.*)"
+      - "traefik.http.middlewares.domain-redirect.redirectregex.replacement=https://www.pascalkraupner.dev/$${1}"
       - "traefik.http.routers.portfolio.tls.certresolver=lets-encr"
       - "traefik.http.routers.portfolio.middlewares=portfolio-redirect"
+      - "traefik.http.routers.portfolio.middlewares=domain-redirect"
 networks:
   default:
     name: proxy
