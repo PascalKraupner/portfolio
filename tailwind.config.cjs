@@ -35,6 +35,7 @@ module.exports = {
       },
       textColor: {
         primary: "var(--color-text-primary)",
+        "primary-dark": "var(--color-text-primary-dark)",
         secondary: "var(--color-text-secondary)",
         terminal: "#00FF00",
       },
@@ -51,5 +52,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@shrutibalasa/tailwind-grid-auto-fit"),
+    require("tailwind-gradient-mask-image"),
+  ],
 };

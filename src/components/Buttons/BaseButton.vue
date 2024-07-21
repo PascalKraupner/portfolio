@@ -1,24 +1,26 @@
 <script lang="ts" setup>
 defineProps<{
-  text: string;
-  href: string;
-  icon?: string;
-  type: string;
+    text: string;
+    propClass?: string;
+    href: string;
+    icon?: string;
+    type: string;
 }>();
 </script>
 
 <template>
-  <a
-    :href="href"
-    class="inline-flex items-center justify-center py-2 px-4 rounded-md transition-colors duration-500"
-    :class="[
-      type == 'primary' ? 'bg-primary-color hover:bg-primary-color-darker' : '',
-      type == 'secondary'
-        ? 'bg-secondary-color hover:bg-secondary-color-darker'
-        : '',
-    ]"
-  >
-    <i v-if="icon" class="fas mr-2" :class="[`fa-${icon}`]"></i>
-    <span>{{ text }}</span>
-  </a>
+    <a :href="href"
+        class="inline-flex items-center justify-center py-2 px-4 rounded-md transition-colors duration-500 shadow-lg"
+        :class="[
+          propClass,
+            type == 'primary'
+                ? 'bg-primary-color hover:bg-primary-color-lighter text-primary-dark'
+                : '',
+            type == 'secondary'
+                ? 'border hover:text-primary-color hover:border-primary-color'
+                : '',
+        ]">
+        <i v-if="icon" class="fas mr-2" :class="[`fa-${icon}`]"></i>
+        <span>{{ text }}</span>
+    </a>
 </template>

@@ -6,9 +6,21 @@ import { BackgroundImage } from "astro-imagetools/components";
 ---
 
 <BackgroundImage src="/img/server_room_hero_bg.jpg">
-  <div class="py-5 bg-gradient-to-b from-transparent to-dark-color">
-    <Terminal />
-    <CtaButtons />
+  <div class="bg-gradient-to-b from-transparent to-dark-color">
+    <div class="flex justify-around">
+      <div class="w-full sm:w-3/5 self-center">
+        <Terminal />
+      </div>
+      <div class="w-2/5 max-w-5xl self-end hidden sm:block">
+        <img
+          class="w-full h-auto gradient-mask-b-80"
+          src="/img/pascal_arms_crossed.png"
+          alt="Pascal Kraupner Logo"
+        />
+      </div>
+    </div>
   </div>
 </BackgroundImage>
+
+<CtaButtons />
 <Socials />

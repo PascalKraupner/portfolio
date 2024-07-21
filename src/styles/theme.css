@@ -6,13 +6,14 @@
   /* Text Colors */
   --color-text-primary: theme("colors.neutral.50");
   --color-text-secondary: theme("colors.neutral.200");
+  --color-text-primary-dark: theme("colors.neutral.900");
 
   /* Primary Colors */
-  --color-primary: #70e000;
-  --color-primary-lighter: #7af500;
-  --color-primary-lightest: #85ff0a;
-  --color-primary-darker: #66cc00;
-  --color-primary-darkest: #5cb800;
+  --color-primary: #7af500;
+  --color-primary-lighter: #85ff0a;
+  --color-primary-lightest: #8FFF1F;
+  --color-primary-darker: #70e000;
+  --color-primary-darkest: #66CC00;
 
   /* System Colors */
   --color-secondary: theme("colors.neutral.400");
@@ -40,5 +41,23 @@
 
   --color-shadow: rgba(23, 23, 23, 0.9);
 
-  --color-glow: #7af500;
+  --color-glow: #85ff0a;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary-darkest) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary-darkest);
+  border-radius: 1rem;
 }

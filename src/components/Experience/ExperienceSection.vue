@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import Section from "../../components/Section.vue";
+import Heading from "../Headings/Heading.vue";
 const experiences = [
   {
     time: "11/2015 - 12/2016",
@@ -52,29 +53,24 @@ const experiences = [
         für die Anforderungen der Kunden entwickeln, um bestmögliche maßgeschneiderte Lösungen für sie zu entwickeln.`,
   },
 ];
+
+experiences.reverse();
 </script>
 
 <template>
-  <Section class="mt-20" id="experience">
+  <Section class="my-20" id="experience">
+    <Heading :level="2" :size="2" text="Erfahrung" :cursor="true" />
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 my-16 place-items-start">
-      <div
-        class="flex gap-6 h-full"
-        v-for="(experience, index) in experiences"
-        :key="index"
-      >
+      <div class="flex gap-6 h-full" v-for="(experience, index) in experiences" :key="index">
         <div class="flex">
-          <div
-            class="z-10 bg-primary-color-darker h-10 w-10 rounded-full flex items-center justify-center"
-          >
+          <div class="z-10 bg-primary-color-darker h-10 w-10 rounded-full flex items-center justify-center">
             <i class="fa-solid fa-briefcase text-xl"></i>
           </div>
           <div class="bg-gray-800 relative right-5 w-[1px]"></div>
         </div>
         <div>
-          <span
-            class="text-sm bg-secondary px-2 py-1 text-primary-color rounded-xl inline-block mb-1 mt-1"
-            >{{ experience.time }}</span
-          >
+          <span class="text-sm bg-secondary px-2 py-1 text-primary-color rounded-xl inline-block mb-1 mt-1">{{
+            experience.time }}</span>
           <div class="mb-2 mt-2">
             <h2 class="text-lg font-bold">{{ experience.position }}</h2>
             <p class="text-lg text-secondary-color">{{ experience.company }}</p>

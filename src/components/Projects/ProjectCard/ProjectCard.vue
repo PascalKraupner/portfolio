@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import Paragraph from "../../Paragraph.vue";
 import ProjectCardTechnology from "./ProjectTechnology.vue";
 const { project } = defineProps({
   project: {
@@ -9,7 +10,7 @@ const { project } = defineProps({
 </script>
 <template>
   <article
-    class="flex flex-col max-w-lg bg-secondary shadow-lg shadow-default border border-default rounded-lg hover:scale-110 hover:shadow-primary-color hover:shadow transition-transform ease-in-out duration-500"
+    class="flex flex-col max-w-3xl bg-secondary shadow-lg shadow-default border border-default rounded-lg hover:scale-105 hover:shadow-primary-color hover:shadow transition-transform ease-in-out duration-500"
   >
     <div>
       <a target="_blank" :href="project.livePreviewLink"
@@ -30,17 +31,20 @@ const { project } = defineProps({
             <a
               target="_blank"
               :href="project.livePreviewLink"
-              class="hover:text-primary-color transition duration-500"
+              class="hover:text-primary-color transition duration-500 mx-2"
             >
               <i
-                class="ml-1 mr-4 text-lg fa-solid fa-arrow-up-right-from-square"
+                class="ml-1 mr-2 text-base fa-solid fa-arrow-up-right-from-square"
               ></i>
+              <span>Live-Preview</span>
             </a>
+            |
             <a
               target="_blank"
               :href="project.githubRepositoryLink"
-              class="hover:text-primary-color transition duration-500"
-              ><i class="ml-1 text-lg fa-brands fa-github"></i>
+              class="hover:text-primary-color transition duration-500 mx-2"
+              ><i class="ml-1 mr-2 text-base fa-brands fa-github"></i>
+              <span>Quellcode</span>
             </a>
           </div>
         </div>
@@ -53,14 +57,14 @@ const { project } = defineProps({
             <ProjectCardTechnology :technology="technology" />
           </span>
 
-          <p class="my-5 leading-6">
+          <Paragraph class="my-5 leading-6">
             <a
               class="hover:text-secondary-color transition duration-500"
               :href="project.livePreviewLink"
             >
               {{ project.shortDescription }}
             </a>
-          </p>
+          </Paragraph>
         </div>
       </div>
     </div>

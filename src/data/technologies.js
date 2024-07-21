@@ -9,12 +9,111 @@ export const technologies = [
     },
   },
   {
+    key: "vuejs",
+    name: "Vue.js",
+    active: true,
+    icon: {
+      src: "/img/logos/vuejs.svg",
+      alt: "Vue.js Icon",
+    },
+  },
+  {
+    key: "typescript",
+    name: "TypeScript",
+    active: true,
+    icon: {
+      src: "/img/logos/typescript.svg",
+      alt: "TypeScript Icon",
+    },
+  },
+  {
+    key: "nuxtjs",
+    name: "Nuxt.js",
+    active: true,
+    icon: {
+      src: "/img/logos/nuxt.svg",
+      alt: "Nuxt.js Icon",
+    },
+  },
+  {
     key: "tailwind",
     name: "Tailwind CSS",
     active: true,
     icon: {
       src: "/img/logos/tailwindcss.svg",
       alt: "Tailwind CSS Icon",
+    },
+  },
+  {
+    key: "git",
+    name: "Git",
+    active: true,
+    icon: {
+      src: "/img/logos/git.svg",
+      alt: "Git Icon",
+    },
+  },
+  {
+    key: "docker",
+    name: "Docker",
+    active: true,
+    icon: {
+      src: "/img/logos/docker.svg",
+      alt: "Docker Icon",
+    },
+  },
+  {
+    key: "php",
+    name: "PHP",
+    active: true,
+    icon: {
+      src: "/img/logos/php.svg",
+      alt: "PHP Icon",
+    },
+  },
+  {
+    key: "mysql",
+    name: "MySQL",
+    active: true,
+    icon: {
+      src: "/img/logos/mysql.svg",
+      alt: "MySQL Icon",
+    },
+  },
+  {
+    key: "css",
+    name: "CSS",
+    active: true,
+    icon: {
+      src: "/img/logos/css.svg",
+      alt: "CSS Icon",
+    },
+  },
+  {
+    key: "html5",
+    name: "HTML5",
+    active: true,
+    icon: {
+      src: "/img/logos/html5.svg",
+      alt: "HTML5 Icon",
+    },
+  },
+  {
+    key: "javascript",
+    name: "JavaScript",
+    active: true,
+    icon: {
+      src: "/img/logos/javascript.svg",
+      alt: "JavaScript Icon",
+    },
+  },
+  {
+    key: "jquery",
+    name: "jQuery",
+    active: false,
+    icon: {
+      src: "/img/logos/jquery.svg",
+      alt: "jQuery Icon",
     },
   },
   {
@@ -27,21 +126,39 @@ export const technologies = [
     },
   },
   {
-    key: "alpine",
-    name: "Alpine.js",
+    key: "shopware",
+    name: "Shopware",
     active: true,
     icon: {
-      src: "/img/logos/alpinejs.svg",
-      alt: "Alpinejs Icon",
+      src: "/img/logos/shopware.svg",
+      alt: "Shopware Icon",
     },
   },
   {
-    key: "angular",
-    name: "Angular",
-    active: false,
+    key: "symfony",
+    name: "Symfony",
+    active: true,
     icon: {
-      src: "/img/logos/angular.svg",
-      alt: "Angular Icon",
+      src: "/img/logos/symfony.svg",
+      alt: "Symfony Icon",
+    },
+  },
+  {
+    key: "slim",
+    name: "Slim",
+    active: true,
+    icon: {
+      src: "/img/logos/slim.svg",
+      alt: "Slim Icon",
+    },
+  },
+  {
+    key: "wordpress",
+    name: "Wordpress",
+    active: true,
+    icon: {
+      src: "/img/logos/wordpress.svg",
+      alt: "Wordpress Icon",
     },
   },
   {
@@ -54,12 +171,111 @@ export const technologies = [
     },
   },
   {
+    key: "alpine",
+    name: "Alpine.js",
+    active: true,
+    icon: {
+      src: "/img/logos/alpinejs.svg",
+      alt: "Alpinejs Icon",
+    },
+  },
+  {
+    key: "react",
+    name: "React",
+    active: false,
+    icon: {
+      src: "/img/logos/react.svg",
+      alt: "React Icon",
+    },
+  },
+  {
     key: "bootstrap",
     name: "Bootstrap",
     active: true,
     icon: {
       src: "/img/logos/bootstrap.svg",
       alt: "Bootstrap Icon",
+    },
+  },
+  {
+    key: "sass",
+    name: "Sass",
+    active: false,
+    icon: {
+      src: "/img/logos/sass.svg",
+      alt: "Sass Icon",
+    },
+  },
+  {
+    key: "sqlite",
+    name: "SQLite",
+    active: true,
+    icon: {
+      src: "/img/logos/sqlite.svg",
+      alt: "SQLite Icon",
+    },
+  },
+  {
+    key: "github",
+    name: "GitHub",
+    active: true,
+    icon: {
+      src: "/img/logos/github.svg",
+      alt: "GitHub Icon",
+    },
+  },
+  {
+    key: "nodejs",
+    name: "Node.js",
+    active: true,
+    icon: {
+      src: "/img/logos/nodejs.svg",
+      alt: "Node.js Icon",
+    },
+  },
+  {
+    key: "vite",
+    name: "Vite",
+    active: true,
+    icon: {
+      src: "/img/logos/vitejs.svg",
+      alt: "Vite Icon",
+    },
+  },
+  {
+    key: "webpack",
+    name: "Webpack",
+    active: true,
+    icon: {
+      src: "/img/logos/webpack.svg",
+      alt: "Webpack Icon",
+    },
+  },
+  {
+    key: "python",
+    name: "Python",
+    active: false,
+    icon: {
+      src: "/img/logos/python.svg",
+      alt: "Python Icon",
+    },
+  },
+  {
+    key: "selenium",
+    name: "Selenium",
+    active: true,
+    icon: {
+      src: "/img/logos/selenium.svg",
+      alt: "Selenium Icon",
+    },
+  },
+  {
+    key: "angular",
+    name: "Angular",
+    active: false,
+    icon: {
+      src: "/img/logos/angular.svg",
+      alt: "Angular Icon",
     },
   },
   {
@@ -78,15 +294,6 @@ export const technologies = [
     icon: {
       src: "/img/logos/django.svg",
       alt: "Django Icon",
-    },
-  },
-  {
-    key: "docker",
-    name: "Docker",
-    active: true,
-    icon: {
-      src: "/img/logos/docker.svg",
-      alt: "Docker Icon",
     },
   },
   {
@@ -117,24 +324,6 @@ export const technologies = [
     },
   },
   {
-    key: "git",
-    name: "Git",
-    active: true,
-    icon: {
-      src: "/img/logos/git.svg",
-      alt: "Git Icon",
-    },
-  },
-  {
-    key: "github",
-    name: "GitHub",
-    active: true,
-    icon: {
-      src: "/img/logos/github.svg",
-      alt: "GitHub Icon",
-    },
-  },
-  {
     key: "go",
     name: "Go",
     active: false,
@@ -144,39 +333,12 @@ export const technologies = [
     },
   },
   {
-    key: "html5",
-    name: "HTML5",
-    active: true,
-    icon: {
-      src: "/img/logos/html5.svg",
-      alt: "HTML5 Icon",
-    },
-  },
-  {
-    key: "javascript",
-    name: "JavaScript",
-    active: true,
-    icon: {
-      src: "/img/logos/javascript.svg",
-      alt: "JavaScript Icon",
-    },
-  },
-  {
     key: "jest",
     name: "Jest",
     active: false,
     icon: {
       src: "/img/logos/jest.svg",
       alt: "Jest Icon",
-    },
-  },
-  {
-    key: "jquery",
-    name: "jQuery",
-    active: false,
-    icon: {
-      src: "/img/logos/jquery.svg",
-      alt: "jQuery Icon",
     },
   },
   {
@@ -207,15 +369,6 @@ export const technologies = [
     },
   },
   {
-    key: "mysql",
-    name: "MySQL",
-    active: true,
-    icon: {
-      src: "/img/logos/mysql.svg",
-      alt: "MySQL Icon",
-    },
-  },
-  {
     key: "neovim",
     name: "Neovim",
     active: false,
@@ -231,42 +384,6 @@ export const technologies = [
     icon: {
       src: "/img/logos/nextjs.svg",
       alt: "Next.js Icon",
-    },
-  },
-  {
-    key: "nodejs",
-    name: "Node.js",
-    active: true,
-    icon: {
-      src: "/img/logos/nodejs.svg",
-      alt: "Node.js Icon",
-    },
-  },
-  {
-    key: "nuxtjs",
-    name: "Nuxt.js",
-    active: false,
-    icon: {
-      src: "/img/logos/nuxt.svg",
-      alt: "Nuxt.js Icon",
-    },
-  },
-  {
-    key: "php",
-    name: "PHP",
-    active: true,
-    icon: {
-      src: "/img/logos/php.svg",
-      alt: "PHP Icon",
-    },
-  },
-  {
-    key: "wordpress",
-    name: "Wordpress",
-    active: true,
-    icon: {
-      src: "/img/logos/wordpress.svg",
-      alt: "Wordpress Icon",
     },
   },
   {
@@ -288,30 +405,12 @@ export const technologies = [
     },
   },
   {
-    key: "python",
-    name: "Python",
-    active: true,
-    icon: {
-      src: "/img/logos/python.svg",
-      alt: "Python Icon",
-    },
-  },
-  {
     key: "reactiveX",
     name: "ReactiveX",
     active: false,
     icon: {
       src: "/img/logos/reactivex.svg",
       alt: "ReactiveX Icon",
-    },
-  },
-  {
-    key: "react",
-    name: "React",
-    active: true,
-    icon: {
-      src: "/img/logos/react.svg",
-      alt: "React Icon",
     },
   },
   {
@@ -333,57 +432,12 @@ export const technologies = [
     },
   },
   {
-    key: "sass",
-    name: "Sass",
-    active: true,
-    icon: {
-      src: "/img/logos/sass.svg",
-      alt: "Sass Icon",
-    },
-  },
-  {
-    key: "selenium",
-    name: "Selenium",
-    active: true,
-    icon: {
-      src: "/img/logos/selenium.svg",
-      alt: "Selenium Icon",
-    },
-  },
-  {
-    key: "shopware",
-    name: "Shopware",
-    active: false,
-    icon: {
-      src: "/img/logos/shopware.svg",
-      alt: "Shopware Icon",
-    },
-  },
-  {
-    key: "slim",
-    name: "Slim",
-    active: true,
-    icon: {
-      src: "/img/logos/slim.svg",
-      alt: "Slim Icon",
-    },
-  },
-  {
     key: "snowpack",
     name: "Snowpack",
     active: false,
     icon: {
       src: "/img/logos/snowpack.svg",
       alt: "Snowpack Icon",
-    },
-  },
-  {
-    key: "sqlite",
-    name: "SQLite",
-    active: true,
-    icon: {
-      src: "/img/logos/sqlite.svg",
-      alt: "SQLite Icon",
     },
   },
   {
@@ -402,51 +456,6 @@ export const technologies = [
     icon: {
       src: "/img/logos/svelte.svg",
       alt: "Svelte Icon",
-    },
-  },
-  {
-    key: "symfony",
-    name: "Symfony",
-    active: true,
-    icon: {
-      src: "/img/logos/symfony.svg",
-      alt: "Symfony Icon",
-    },
-  },
-  {
-    key: "typescript",
-    name: "TypeScript",
-    active: true,
-    icon: {
-      src: "/img/logos/typescript.svg",
-      alt: "TypeScript Icon",
-    },
-  },
-  {
-    key: "vite",
-    name: "Vite",
-    active: true,
-    icon: {
-      src: "/img/logos/vitejs.svg",
-      alt: "Vite Icon",
-    },
-  },
-  {
-    key: "vuejs",
-    name: "Vue.js",
-    active: true,
-    icon: {
-      src: "/img/logos/vuejs.svg",
-      alt: "Vue.js Icon",
-    },
-  },
-  {
-    key: "webpack",
-    name: "Webpack",
-    active: true,
-    icon: {
-      src: "/img/logos/webpack.svg",
-      alt: "Webpack Icon",
     },
   },
 ];

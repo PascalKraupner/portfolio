@@ -2,10 +2,11 @@
 import BaseButton from "./BaseButton.vue";
 defineProps<{
   text: string;
+  propClass?: string;
   href: string;
   icon?: string;
 }>();
 </script>
 <template>
-  <BaseButton :text="text" :href="href" :icon="icon" type="secondary" />
+  <BaseButton :text="text" :href="href" :icon="icon" :class="propClass" type="secondary" />
 </template>
