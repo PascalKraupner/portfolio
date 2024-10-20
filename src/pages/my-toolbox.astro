@@ -1,0 +1,16 @@
+---
+import MyToolBoxSection from "../components/MyToolBox/MyToolBoxSection.vue";
+import Layout from "../layouts/Layout.astro";
+import Heading from "../components/Headings/Heading.vue";
+import Wrapper from "../components/Wrapper.vue";
+---
+
+<Layout
+  title="Pascal Kraupner - Full Stack Web Developer | My Toolkit"
+  pageUrl="https://www.pascalkraupner.dev/my-toolbox"
+>
+  <Wrapper>
+    <Heading level={1} size={1} cursor={true} text="Meine Toolbox" />
+    <MyToolBoxSection />
+  </Wrapper>
+</Layout>
